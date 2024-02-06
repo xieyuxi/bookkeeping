@@ -89,7 +89,7 @@ public class StatementOperator {
      */
     public void delStatement() {
 
-        int option = 0;
+        int option;
         if (!showAllList()) {
             return;
         }
@@ -124,7 +124,7 @@ public class StatementOperator {
     public void modifyStatement() {
 
         boolean isFlag = true;
-        int option = 0;
+        int option;
         if (!showAllList()) {
             return;
         }

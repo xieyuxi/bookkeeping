@@ -1,7 +1,6 @@
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-import java.util.Locale;
 
 /**
  * @projectName: bookkeeping
@@ -21,7 +20,7 @@ public class DateUtil {
 
     public static Date YmdStringToDate(String dateStr) {
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
-        Date date = null;
+        Date date;
         try {
             date = sdf.parse(dateStr);
         } catch (ParseException e) {
